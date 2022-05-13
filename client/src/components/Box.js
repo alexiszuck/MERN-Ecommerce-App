@@ -9,8 +9,12 @@ function Box() {
 
   return (
     <div className={`cursor-pointer p-5 hover:bg-gray-500 rounded-2xl ${green ? 'bg-green-300' : 'bg-red-300'}`} onClick={changeColor}>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
+      <h1 className="text-4xl font-poppins font-bold">
+      adidas / Products. / Brand Shoes / Recommend / Customer Reviews
+      </h1>
+      <br />
+      <h1 className="text-4xl font-bold">
+      adidas / Products. / Brand Shoes / Recommend / Customer Reviews
       </h1>
     </div>
   )
