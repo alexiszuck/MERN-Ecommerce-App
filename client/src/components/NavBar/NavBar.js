@@ -1,7 +1,7 @@
 import { GiftIcon } from '@heroicons/react/solid'
 import { ShoppingBagIcon, UserIcon, MenuAlt2Icon } from '@heroicons/react/outline'
 
-function TopBar() {
+function NavBar() {
   const handleTopPromo = () => {
     console.log('open top promo')
   }
@@ -34,7 +34,7 @@ function TopBar() {
   }
 
   return (
-    <div className="sticky top-0 z-50 flex flex-col items-center font-poppins">
+    <nav className="sticky top-0 z-50 flex flex-col items-center font-poppins">
       <div className="hidden sm:flex items-center justify-center bg-neutral-900 h-8 w-screen" onClick={handleTopPromo}>
         <GiftIcon className="h-5 w-5 text-white mr-1 pb-1 cursor-pointer" /><span className="font-bold text-white text-xs cursor-pointer">FREE SHIPPING ON ORDER OF 50 DOLLARS</span>
       </div>
@@ -42,7 +42,7 @@ function TopBar() {
         <div className="flex items-center justify-left sm:justify-center">
           <MenuAlt2Icon className="h-6 pl-4 cursor-pointer sm:hidden" onClick={handleMenu} />
           <div className="hidden sm:block cursor-pointer text-mern-gray font-bold text-xl md:text-2xl">
-          M <span className="font-normal">|</span> E <span className="font-normal">|</span> R <span className="font-normal">|</span> N
+            M <span className="font-normal">|</span> E <span className="font-normal">|</span> R <span className="font-normal">|</span> N
           </div>
         </div>
 
@@ -61,8 +61,8 @@ function TopBar() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
-export default TopBar
+export default NavBar;

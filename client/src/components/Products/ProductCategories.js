@@ -1,10 +1,10 @@
 
 function ProductCategories() {
-    return (
-      <div>
-          ProductCategories
-      </div>
-    )
-  }
+  return (
+    <main>
+      ProductCategories
+    </main>
+  )
+}
 
-  export default ProductCategories
+export default ProductCategories;
