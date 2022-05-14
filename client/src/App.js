@@ -1,23 +1,15 @@
-import TopBar from './components/NavBar/TopBar';
-import PromotionBanner from './components/Header/PromotionBanner';
-import SearchBar from './components/Header/SearchBar';
+import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 import ProductCategories from './components/Products/ProductCategories';
-import BottomBar from './components/Footer/BottomBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="flex flex-col bg-neutral-800 h-screen w-screen">
-      <header>
-        <TopBar />
-        <PromotionBanner />
-      </header>
-      <main>
-        <SearchBar />
-        <ProductCategories />
-      </main>
-      <footer>
-        <BottomBar />
-      </footer>
+      <NavBar />
+      <Header />
+      <ProductCategories />
+      <Footer />
     </div>
   );
 }
