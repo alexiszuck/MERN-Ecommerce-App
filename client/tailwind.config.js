@@ -12,6 +12,7 @@ module.exports = {
         'mern-gray': '#333235',
         'mern-red': '#ff626d',
         'mern-orange': '#fcad72',
+        'card-orange': '#dc745d'
       }
     }
   },
