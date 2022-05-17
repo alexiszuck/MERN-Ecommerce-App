@@ -4,7 +4,7 @@ function ProductCategories() {
   return (
     <main className="h-fit w-[80%] mx-auto">
       <div className="mb-10 font-poppins text-white font-semibold">Product Categories.</div>
-      <div className="grid grid-cols-4 gap-4 h m-auto">
+      <div className="flex overflow-x-auto h m-auto">
         <CategoryCard
           categoryTitle={'Technology'}
           productCategories={['Laptops', 'Monitors', 'Games']}
