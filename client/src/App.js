@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DefaultLayout from './layouts/Default';
+import DefaultLayout from './layouts/DefaultLayout';
 import Home from './components/pages/home/Home';
 
 function App() {
