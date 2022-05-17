@@ -1,17 +1,13 @@
-import NavBar from './components/NavBar/NavBar';
-import Header from './components/Header/Header';
-import ProductCategories from './components/Products/ProductCategories';
-import Footer from './components/Footer/Footer';
+import React from 'react';
+
+import DefaultLayout from './layouts/Default';
+import Home from './components/pages/home/Home';
 
 function App() {
   return (
-    <div className="flex flex-col bg-mern-dark">
-
-      <NavBar />
-      <Header />
-      <ProductCategories />
-      <Footer />
-    </div>
+    <DefaultLayout>
+      <Home />
+    </DefaultLayout>
   );
 }
 
