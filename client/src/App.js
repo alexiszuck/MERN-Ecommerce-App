@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="flex flex-col bg-mern-dark">
+
       <NavBar />
       <Header />
       <ProductCategories />

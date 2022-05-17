@@ -1,8 +1,27 @@
+import CategoryCard from "./CategoryCard";
 
 function ProductCategories() {
   return (
-    <main>
-      ProductCategories
+    <main className="h-fit w-[80%] mx-auto">
+      <div className="mb-10 font-poppins text-white font-semibold">Product Categories.</div>
+      <div className="flex overflow-x-auto h m-auto">
+        <CategoryCard
+          categoryTitle={'Technology'}
+          productCategories={['Laptops', 'Monitors', 'Games']}
+        />
+        <CategoryCard
+          categoryTitle={'Fashion'}
+          productCategories={['Shoes', 'Hats', 'Jeans']}
+        />
+        <CategoryCard
+          categoryTitle={'Sports'}
+          productCategories={['Basketball', 'Tennis', 'Swimming']}
+        />
+        <CategoryCard
+          categoryTitle={'Personal Care'}
+          productCategories={['Suncreams', 'Perfumes', 'Dental Care']}
+        />
+      </div>
     </main>
   )
 }
