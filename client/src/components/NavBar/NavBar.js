@@ -35,10 +35,10 @@ function NavBar() {
 
   return (
     <nav className="sticky top-0 z-50 flex flex-col items-center font-poppins">
-      <div className="hidden sm:flex items-center justify-center bg-neutral-900 h-8 w-screen" onClick={handleTopPromo}>
+      <div className="hidden sm:flex items-center justify-center bg-mern-gray h-8 w-full" onClick={handleTopPromo}>
         <GiftIcon className="h-5 w-5 text-white mr-1 pb-1 cursor-pointer" /><span className="font-bold text-white text-xs cursor-pointer">FREE SHIPPING ON ORDER OF 50 DOLLARS</span>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 h-14 w-screen text-white text-sm bg-gradient-to-r from-mern-red to-mern-orange shadow-mern-orange shadow-sm ">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 h-14 w-full text-white text-sm bg-gradient-to-r from-mern-red to-mern-orange shadow-mern-orange shadow-sm ">
         <div className="flex items-center justify-left sm:justify-center">
           <MenuAlt2Icon className="h-6 pl-4 cursor-pointer sm:hidden" onClick={handleMenu} />
           <div className="hidden sm:block cursor-pointer text-mern-gray font-bold text-xl md:text-2xl">
