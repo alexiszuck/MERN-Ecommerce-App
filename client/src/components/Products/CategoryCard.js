@@ -6,7 +6,7 @@ const CategoryCard = props => {
       <p className="font-semibold p-3">{props.categoryTitle}</p>
       <ul>
         {props.productCategories.map(category =>
-          <li className="p-1">{category}</li>)}
+          <li className="p-1" key={Math.random() * 1 + 1}> {category} </li>)}
       </ul>
     </div>
   );
