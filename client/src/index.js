@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import ThemeMERN from './ThemeMERN';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CssBaseline />
+    <ThemeProvider theme={ThemeMERN}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
