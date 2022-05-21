@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
-function SearchBar() {
+function HomeSearchBar() {
   const searchRef = useRef(null)
 
   const handleSearch = (e) => {
@@ -24,4 +24,4 @@ function SearchBar() {
   )
 }
 
-export default SearchBar
+export default HomeSearchBar
