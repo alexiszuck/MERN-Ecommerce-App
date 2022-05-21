@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DefaultLayout from './layouts/DefaultLayout';
-import Home from './components/pages/home/Home';
+import Home from './pages/Home';
 
 function App() {
   return (

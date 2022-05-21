@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
-function PromotionBanner() {
+function HomePromotionBanner() {
   const [activeBanner, setActiveBanner] = useState(0)
 
   useEffect(() => {
@@ -95,4 +95,4 @@ function PromotionBanner() {
   </>
 }
 
-export default PromotionBanner
+export default HomePromotionBanner
