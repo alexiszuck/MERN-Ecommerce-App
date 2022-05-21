@@ -1,15 +1,16 @@
 import React from 'react';
+import Stack from '@mui/material/Stack';
 
 import Footer from '../components/Footer/Footer';
 import NavBar from '../components/NavBar/NavBar';
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div className='flex flex-col bg-mern-dark'>
+    <Stack>
       <NavBar />
       {children}
       <Footer />
-    </div>
+    </Stack>
   );
 };
 

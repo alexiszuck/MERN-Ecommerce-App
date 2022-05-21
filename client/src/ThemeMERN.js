@@ -7,11 +7,11 @@ const ThemeMERN = createTheme({
             'sans-serif',
         ].join(','),
     },
-    palette: {
-        primary: {
-            main: '#ff626d',
-        },
-    },
+    // palette: {
+    //     primary: {
+    //         main: '#ff626d',
+    //     },
+    // },
 });
 
 export default ThemeMERN;
