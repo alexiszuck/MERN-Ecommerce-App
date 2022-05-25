@@ -1,14 +1,26 @@
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import SellIcon from '@mui/icons-material/Sell';
 
-
-const CategoryCard = props => {
+const CategoryCard = ({ categoryTitle = '', productCategories = [] }) => {
   return (
-    <div className="w-44 shrink-0 rounded-lg bg-card-orange shadow-xl text-center text-white m-2 md:m-5 p-2 pb-5">
-      <p className="font-semibold p-3">{props.categoryTitle}</p>
-      <ul>
-        {props.productCategories.map(category =>
-          <li className="p-1" key={Math.random() * 1 + 1}> {category} </li>)}
-      </ul>
-    </div>
+    <Card sx={{ minWidth: 200 }}>
+      <CardActionArea>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {categoryTitle}
+          </Typography>
+          {
+            productCategories.map((item, idx) =>
+              <Typography key={`pc-${idx}`} variant="body2" color="text.secondary">
+                <SellIcon sx={{ fontSize: '0.9rem', verticalAlign: 'middle' }}/> {item}
+              </Typography>)
+          }
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
 
