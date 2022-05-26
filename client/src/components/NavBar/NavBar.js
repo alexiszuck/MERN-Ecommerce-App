@@ -13,10 +13,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import RedeemIcon from '@mui/icons-material/Redeem';
 
 import UserProfile from '../UserProfile/UserProfile';
+import Login from '../Login/Login';
 
 function NavBar() {
   const [showUserProfile, setShowUserProfile] = useState(false);
-  
+  const [isAuth, setIsAuth] = useState(false);
+
   const handleTopPromo = () => {
     console.log('open top promo');
   };
@@ -143,7 +145,9 @@ function NavBar() {
             onClose={toggleUserProfile}
           >
             <Box sx={{ width: 320 }}>
-              <UserProfile />
+              {
+                isAuth ? <UserProfile setIsAuth={setIsAuth} /> : <Login setIsAuth={setIsAuth} />
+              }
             </Box>
           </Drawer>
         </Grid>

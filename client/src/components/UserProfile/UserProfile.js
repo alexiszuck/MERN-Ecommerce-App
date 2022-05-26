@@ -1,18 +1,23 @@
 import { styled } from '@mui/material/styles';
 import { Stack, Box, Avatar, Badge, Typography } from "@mui/material";
 import { grey } from '@mui/material/colors';
+import MERNButton from '../../ui/MERNButton/MERNButton';
 
-function UserProfile() {
+function UserProfile({ setIsAuth }) {
 
   const user = {
     username: 'Lucinda Riddle',
     createdAt: new Date(),
-      first_name: 'Lucinda',
-      last_name: 'Riddle',
-      country: 'Salem, Massachusetts',
-      date_of_birth: '08.02.1987',
-      shopping: 12,
-      bonuses: '$10'
+    first_name: 'Lucinda',
+    last_name: 'Riddle',
+    country: 'Salem, Massachusetts',
+    date_of_birth: '08.02.1987',
+    shopping: 12,
+    bonuses: '$10'
+  }
+
+  const handleLogout = () => {
+    setIsAuth(false);
   }
 
   const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -185,6 +190,23 @@ function UserProfile() {
 
       </Box>
 
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '630px',
+          width: '85%',
+          textAlign: 'right',
+        }}
+      >
+        <MERNButton onClick={handleLogout}
+          sx={{
+            width: '10rem',
+            fontWeight: 'light',
+            color: 'primary.main'
+          }}>
+          Logout
+        </MERNButton>
+      </Box>
 
 
     </Stack>
